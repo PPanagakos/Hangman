@@ -46,7 +46,11 @@ function CreateMenuComponent(menuText) {
           }
         : null,
       menuText !== "PAUSED"
-        ? { text: "PLAY AGAIN", action: buttonActions.playAgain }
+        ? {
+            text: "PLAY AGAIN",
+            action: buttonActions.playAgain,
+            className: "small",
+          }
         : null,
       { text: "NEW CATEGORY", action: buttonActions.newCategory },
       {
