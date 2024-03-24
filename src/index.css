@@ -1,0 +1,37 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; 
+}
+
+/* Font-face Declaration */
+@font-face {
+  font-family: 'MouseMemoirs';
+  src: url('./assets/fonts/MouseMemoirs-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'MouseMemoirs', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* Color Variables */
+:root {
+  --primary-color: #261676;
+  --secondary-color: #2463FF;
+  --background-color: #FFF;
+}
+
+

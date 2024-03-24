@@ -1,0 +1,55 @@
+.instructions-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.header-text {
+    font-size: 40px; 
+    font-weight: bold; 
+    color: #b8d5f0; 
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 
+    -5px -5px 0 #000,  
+     5px -5px 0 #000,
+    -5px  5px 0 #000,
+     5px  5px 0 #000; 
+}
+
+.back-arrow-button {
+  height: auto;
+  width: 40px; 
+  background: linear-gradient(to top, #7199FF, #FE71FE);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: none; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.back-arrow-img {
+  width: 30px; 
+  transform: scale(0.7);
+}
+
+
+
+@media (min-width: 768px){
+  .instructions-container{
+    justify-content: center;
+    padding: 40px 20px;
+  }
+ 
+    .header-text{
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 70px;
+    }
+
+  }
+
+  

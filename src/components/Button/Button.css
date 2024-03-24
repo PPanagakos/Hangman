@@ -1,0 +1,44 @@
+.pill-button {
+    padding: 10px 15px;
+    margin-top: 50px;
+    font-size: 25px;
+    width: 200px;
+    font-family: 'MouseMemoirs';
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.1s; 
+  }
+  
+  .pill-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    pointer-events: none; 
+  }
+  
+  .pill-button:active {
+    transform: translateY(2px); 
+  }
+
+  .pill-button.small {
+   width: 160px;
+  }
+
+  .pill-button.quit-game {
+    background-image: linear-gradient(to bottom, #FE71FE 50%, #7199FF);
+    color: white; 
+  }
+
+  .pill-button:hover{
+    filter: brightness(150%);
+  }

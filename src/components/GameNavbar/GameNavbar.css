@@ -1,0 +1,110 @@
+.game-navbar-container{
+  display: flex;
+  justify-content: space-between;    
+  align-items: center;
+  padding: 10px;
+}
+
+.game-navbar-left, .game-navbar-right {
+  display: flex;
+  align-items: center;
+  margin: 15px 5px;
+}
+
+.game-navbar-right{
+  margin-left: 60px;
+}
+
+.menu-icon, .heart-icon {
+  margin-right: 10px;
+}
+  
+.categories-text {
+  color: #fff;
+  font-size: 22px;
+  width: 90px;
+}
+
+.health-bar {
+  width: 60px;
+  height: 20px;
+  background-color: white; 
+  border-radius: 50px; 
+  border: 2px solid black; 
+  overflow: hidden; 
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.health-progress {
+  height: 100%;
+  width: 100%; 
+  background-color: var(--primary-color);
+  border-radius: 45px;
+  transition: width 0.3s ease;
+}
+  
+.menu-icon {
+  height: auto;
+  width: 30px;
+  transform: scale(0.9);
+  background: linear-gradient(to top, #7199FF,#FE71FE  );
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  transform: scale(0.4);
+}
+
+
+@media (min-width: 768px) {
+  .game-navbar-container {
+    padding: 30px;
+    margin-bottom: 50px; 
+  }
+
+  .menu-icon {
+    width: 50px; 
+    padding: 15px; 
+    margin-right: 20px;
+    transform: scale(0.8); 
+  }
+
+  .heart-icon {
+    transform: scale(0.6); 
+  }
+
+  .categories-text {
+    font-size: 32px; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: auto;
+  }
+
+  .health-bar {
+    width: 120px;
+    height: 25px;
+    margin-right: 10px;
+    padding: 6px; 
+  }
+  
+  .game-navbar-right {
+    margin-left: auto; 
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .game-navbar-container {
+    padding: 50px;
+  }
+
+  .health-bar {
+    width: 150px;
+    height: 25px;
+    margin-right: 10px;
+    padding: 6px; 
+  }
+}

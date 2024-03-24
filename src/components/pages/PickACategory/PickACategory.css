@@ -1,0 +1,19 @@
+.pick-category-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+@media (min-width: 768px) {
+    .pick-category-container{
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pick-category-container{
+       margin: 75px;
+       
+    }
+}
